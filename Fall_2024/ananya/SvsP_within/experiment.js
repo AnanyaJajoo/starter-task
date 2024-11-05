@@ -73,6 +73,13 @@ class Experiment {
         data: { phase: "practicePair", cue: experiment.cue, target: experiment.target },
       };
 
+      //Save Data
+      var saveData = {
+        type: "pcllab-save-to-jarvis",
+        experiment_id: "672904857e0ef9067032093b",
+      };
+      this.timeline.push(saveData);
+
       this.timeline.push(testBoxTask);
       this.timeline.push(pairTask);
     }
